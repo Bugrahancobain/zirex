@@ -1,0 +1,64 @@
+import React from 'react'
+import "../style/footer.css"
+import { FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { TiSocialFacebook } from "react-icons/ti";
+import { FaXTwitter, FaYoutube } from "react-icons/fa6";
+
+
+
+
+import Link from 'next/link'
+
+function Footer() {
+    return (
+        <div className='footerMain' style={{ backgroundImage: `url("/footerImage.jpg")`, backgroundSize: "cover" }}>
+            <div className='footerDiv'>
+                <div className='footerSocialDiv'>
+                    <img src="#" alt="Zirex_Kağıt_logo.png" />
+                    <p>Bizleri Sosyal Medyadan Takip Edebilirsiniz.</p>
+                    <div className='footerSocialLinks'>
+                        <Link target='_blank' href="#"><TiSocialFacebook />
+                        </Link>
+                        <Link target='_blank' href="#"><FaXTwitter />
+                        </Link>
+                        <Link target='_blank' href="#"><FaYoutube />
+                        </Link>
+                        <Link target='_blank' href="#"><FaInstagram />
+                        </Link>
+                        <Link target='_blank' href="#"><FaLinkedin />
+                        </Link>
+                    </div>
+                </div>
+                <div className='footerFastMenüDiv'>
+                    <h2>Hızlı Menü</h2>
+                    <Link href="/">Anasayfa</Link>
+                    <Link href="/aboutUs">Hakkımızda</Link>
+                    <Link href="/ourProducts">Ürünlerimiz</Link>
+                    <Link href="/ourServices">Hizmetlerimiz</Link>
+                    <Link href="/contact">İletişim</Link>
+                </div>
+                <div className='footerContact'>
+                    <h2>Bize Ulaşın</h2>
+                    <div><FaMapMarkerAlt />
+                        Türkiye,  Marmara bölgesi,  İstanbul,  Davutpaşa Caddesi No : 103 / 319
+                    </div>
+                    <div>
+                        <FaPhoneAlt />+90 (212) 674-44-44
+                    </div>
+                    <div>
+                        <FaPhoneAlt />+90 (212) 613-96-76
+                    </div>
+                    <div>
+                        <IoMail />info@zirex.com
+                    </div>
+                </div>
+            </div>
+            <div className='footerCopyRight'>
+                © ZİREX KAĞIT 2006. TÜM HAKLARI SAKLIDIR.
+            </div>
+        </div>
+    )
+}
+
+export default Footer

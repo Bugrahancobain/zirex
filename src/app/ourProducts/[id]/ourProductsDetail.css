@@ -1,0 +1,138 @@
+.productDetailMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productImageBanner {
+    width: 100%;
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.productContent {
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.productContent h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.productDescription {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.productListSection {
+    margin-bottom: 40px;
+}
+
+.productListSection h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.productItemGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    text-align: left;
+}
+
+.productItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: #555;
+}
+
+.checkIcon {
+    color: #666;
+}
+
+.otherProductsSection {
+    margin-top: 60px;
+    width: 80%;
+    text-align: center;
+}
+
+.otherProductsSection h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.otherProductGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.otherProductCard {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.otherProductCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    border-radius: 6px;
+}
+
+.otherProductCard h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.otherProductCard p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.otherProductCard button {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.otherProductCard button:hover {
+    background-color: #005bb5;
+}
+
+@media (max-width: 1024px) {
+    .otherProductGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .otherProductGrid {
+        grid-template-columns: 1fr;
+    }
+}

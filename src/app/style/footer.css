@@ -1,0 +1,92 @@
+.footerMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    width: 100%;
+    min-height: max-content;
+    color: white;
+    font-size: 17px;
+}
+
+.footerDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 300px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 50px;
+}
+
+.footerSocialDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 33%;
+}
+
+.footerSocialLinks{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 100%;
+    font-size: 30px;
+}
+
+.footerSocialLinks a{
+    color: white;
+    text-decoration: none;
+    width: fit-content;
+
+}
+
+.footerSocialLinks a:active{
+    color: white;
+}
+
+.footerFastMenüDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    width: 33%;
+}
+
+.footerFastMenüDiv h4{
+    margin-bottom: 10px;
+}
+
+.footerFastMenüDiv a{
+    text-decoration: none;
+    color: white;
+    width: fit-content;
+
+}
+
+.footerFastMenüDiv a:active{
+    color: white;
+}
+
+.footerContact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 33%;
+}
+
+.footerContact div{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.footerContact div svg{
+    font-size: 24px;
+}
+
+.footerCopyRight{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
