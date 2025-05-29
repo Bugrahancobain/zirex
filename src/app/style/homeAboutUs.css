@@ -29,7 +29,7 @@
     width: 50%;
     justify-content: space-between;
     gap: 30px;
-    padding: 200px;
+    padding: 100px;
     flex-wrap: wrap;
 }
 
@@ -52,3 +52,26 @@
     width: 150px;
 
 }
+
+@media (max-width: 1024px) {
+    .homeAboutUsMain{
+        flex-direction: column-reverse;
+        height: 100%
+    }
+.homeAboutUsImg{
+    width: 100%;
+    height: 50%;
+}
+.homeAboutUsImg img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+}
+
+.homeAboutUsDiv{
+    width: 100%;
+    padding: 50px;
+}
+    
+  }

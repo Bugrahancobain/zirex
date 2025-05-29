@@ -15,7 +15,7 @@ function Footer() {
         <div className='footerMain' style={{ backgroundImage: `url("/footerImage.jpg")`, backgroundSize: "cover" }}>
             <div className='footerDiv'>
                 <div className='footerSocialDiv'>
-                    <img src="#" alt="Zirex_Kağıt_logo.png" />
+                    <img src="Zirex_Logo.gif" alt="Zirex_Kağıt_logo.png" />
                     <p>Bizleri Sosyal Medyadan Takip Edebilirsiniz.</p>
                     <div className='footerSocialLinks'>
                         <Link target='_blank' href="#"><TiSocialFacebook />
@@ -50,7 +50,7 @@ function Footer() {
                         <FaPhoneAlt />+90 (212) 613-96-76
                     </div>
                     <div>
-                        <IoMail />info@zirex.com
+                        <IoMail />haydar@zirex.com.tr
                     </div>
                 </div>
             </div>

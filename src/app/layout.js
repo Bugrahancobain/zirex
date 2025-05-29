@@ -3,6 +3,8 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import Head from "next/head";
+
 
 const poppins = Poppins({
   variable: "--font-geist-sans",
@@ -32,21 +34,25 @@ export const metadata = {
     "Bristol Karton",
     "Tripleks Karton"
   ],
-  metadataBase: new URL("https://zirexkagit.com"),
+  metadataBase: new URL("https://zirexkagit.com.tr"),
   openGraph: {
     title: "Zirex Kağıt | Gri Karton, Mukavva, Pelur Kağıdı ve Ambalaj Çözümleri",
     description:
       "ZİREX KAĞIT, 1980’den bu yana kağıt ve karton sektöründe hizmet veren, 3500 m² üretim tesisine sahip lider tedarikçinizdir. Gri karton, yapıştırma mukavva ve pelur kağıdı üretimiyle sektörde fark yaratıyor.",
-    url: "https://zirexkagit.com",
+    url: "https://zirexkagit.com.tr",
     siteName: "Zirex Kağıt",
     type: "website",
     locale: "tr_TR"
+
   }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="tr">
+      <Head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </Head>
       <body className={`${poppins.variable}`}>
         <Navbar />
         {children}

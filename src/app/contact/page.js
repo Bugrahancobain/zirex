@@ -52,7 +52,7 @@ function page() {
                 <div className="contactInfoMail">
                     <IoIosMail />
                     <span>E-MAİL</span>
-                    <span>info@zirex.com</span>
+                    <span>haydar@zirex.com.tr</span>
                 </div>
             </div>
             <div className="contactMap">

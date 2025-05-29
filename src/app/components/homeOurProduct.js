@@ -51,8 +51,8 @@ export default function HomeOurProduct() {
                             <img src={product.image} alt={product.title} className="productImage" />
                             <div className="productText">
                                 <h3>{product.title}</h3>
-                                <p>{truncateText(product.description, 250)}</p>
-                                {product.description?.length > 250 && (
+                                <p>{truncateText(product.description, 150)}</p>
+                                {product.description?.length > 150 && (
                                     <button
                                         className="seeMoreButton"
                                         onClick={() => router.push(`/ourProducts/${product.id}`)}
