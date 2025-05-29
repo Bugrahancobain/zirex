@@ -1,27 +1,13 @@
-// firebaseAdmin.js
-import admin from 'firebase-admin';
+import { initializeApp, cert, getApps } from "firebase-admin/app";
+import { getDatabase } from "firebase-admin/database";
 
-if (!admin.apps.length) {
-    const rawKey = process.env.FIREBASE_ADMIN_SDK;
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
 
-    if (!rawKey) {
-        throw new Error("FIREBASE_ADMIN_SDK environment variable is not set.");
-    }
+const app = getApps().length === 0
+    ? initializeApp({
+        credential: cert(serviceAccount),
+        databaseURL: process.env.FIREBASE_DATABASE_URL, // <-- Burayı .env'den doğru almalı
+    })
+    : getApps()[0];
 
-    let serviceAccount;
-
-    try {
-        serviceAccount = JSON.parse(rawKey);
-    } catch (error) {
-        console.error("🔥 JSON PARSE ERROR:", error);
-        throw new Error("Invalid FIREBASE_ADMIN_SDK format in .env");
-    }
-
-    admin.initializeApp({
-        credential: admin.credential.cert(serviceAccount),
-        databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
-    });
-}
-
-const adminDb = admin.database();
-export { adminDb };
+export const adminDb = getDatabase(app);

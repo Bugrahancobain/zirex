@@ -65,6 +65,7 @@
 .seeMoreButton {
     margin-top: 12px;
     background-color: #0070f3;
+    text-decoration: none;
     color: white;
     border: none;
     padding: 8px 16px;

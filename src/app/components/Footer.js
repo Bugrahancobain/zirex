@@ -15,7 +15,7 @@ function Footer() {
         <div className='footerMain' style={{ backgroundImage: `url("/footerImage.jpg")`, backgroundSize: "cover" }}>
             <div className='footerDiv'>
                 <div className='footerSocialDiv'>
-                    <img src="Zirex_Logo.gif" alt="Zirex_Kağıt_logo.png" />
+                    <img src="Zirex_Logo.gif" alt="Zirex_logo.gif" />
                     <p>Bizleri Sosyal Medyadan Takip Edebilirsiniz.</p>
                     <div className='footerSocialLinks'>
                         <Link target='_blank' href="#"><TiSocialFacebook />

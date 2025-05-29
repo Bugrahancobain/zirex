@@ -1,66 +1,53 @@
-"use client";
+// app/ourServices/page.js
 
-import React, { useEffect, useState } from "react";
-import { database } from "../../../firebase";
-import { ref, onValue } from "firebase/database";
-import { useRouter } from "next/navigation";
-import "./ourServices.css"; // özel stiller için ayrı CSS dosyan
+import { getServices } from "../../../getServices";
+import Link from "next/link";
+import "./ourServices.css";
 
 const ITEMS_PER_PAGE = 9;
 
-export default function OurServicesPage() {
-    const [services, setServices] = useState([]);
-    const [currentPage, setCurrentPage] = useState(1);
-    const router = useRouter();
+export default async function OurServicesPage() {
+    const services = await getServices();
 
-    useEffect(() => {
-        const servicesRef = ref(database, "services");
-        onValue(servicesRef, (snapshot) => {
-            const data = snapshot.val();
-            const array = data ? Object.entries(data).map(([id, val]) => ({ id, ...val })) : [];
-            setServices(array.reverse()); // en yeniler öne gelsin
-        });
-    }, []);
-
-    const truncateText = (text, maxLength) => {
-        return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
-    };
-
-    // Sayfalama hesaplamaları
+    const totalPages = Math.ceil(services.length / ITEMS_PER_PAGE);
+    const currentPage = 1;
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = startIndex + ITEMS_PER_PAGE;
     const currentServices = services.slice(startIndex, endIndex);
-    const totalPages = Math.ceil(services.length / ITEMS_PER_PAGE);
+
+    const truncateText = (text, maxLength) =>
+        text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
 
     return (
         <div className="ourServicesPageMain">
             <div className="ourServicesPageImgDiv">
-                <img className="ourServicesPageImg" src="/ourServicesBanner.png" alt="Zirex_Kağıt_Hizmetlerimiz_Banner.png" />
+                <img
+                    className="ourServicesPageImg"
+                    src="/ourServicesBanner.png"
+                    alt="Zirex_Kağıt_Hizmetlerimiz_Banner.png"
+                />
             </div>
             <h2>Hizmetlerimiz</h2>
             <div className="serviceGrid">
-                {currentServices.map(service => (
+                {currentServices.map((service) => (
                     <div key={service.id} className="serviceCard">
                         <img src={service.image} alt={service.title} className="serviceImage" />
                         <h3>{service.title}</h3>
                         <p>{truncateText(service.description, 250)}</p>
-                        <button
-                            className="seeMoreButton"
-                            onClick={() => router.push(`/ourServices/${service.id}`)}
-                        >
+                        <Link href={`/ourServices/${service.id}`} className="seeMoreButton">
                             Devamını Gör
-                        </button>
+                        </Link>
                     </div>
                 ))}
             </div>
 
-            {/* Sayfalama */}
+            {/* Sayfalama UI sadece görünüm için, client-side paginasyon yok */}
             <div className="pagination">
                 {Array.from({ length: totalPages }, (_, i) => (
                     <button
                         key={i + 1}
                         className={`pageButton ${currentPage === i + 1 ? "active" : ""}`}
-                        onClick={() => setCurrentPage(i + 1)}
+                    // İstersen query param'la sayfa geçişi yapabilirsin
                     >
                         {i + 1}
                     </button>

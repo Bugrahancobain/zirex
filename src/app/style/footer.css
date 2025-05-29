@@ -22,14 +22,13 @@
 .footerSocialDiv{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 33%;
 }
 
 .footerSocialDiv img{
     object-fit: contain;
     width: 200px;
-    height: 150px;
 }
 
 .footerSocialLinks{

@@ -1,34 +1,13 @@
-"use client";
+// app/ourServices/[id]/page.js
 
-import React, { useEffect, useState } from "react";
-import { useParams, useRouter } from "next/navigation";
-import { database } from "../../../../firebase";
-import { ref, onValue } from "firebase/database";
+import { getServiceById, getOtherServices } from "../../../../firebaseQueries";
 import "./serviceDetail.css";
+import Link from "next/link";
 
-export default function ServiceDetailPage() {
-    const { id } = useParams();
-    const router = useRouter();
-
-    const [service, setService] = useState(null);
-    const [otherServices, setOtherServices] = useState([]);
-
-    useEffect(() => {
-        const servicesRef = ref(database, "services");
-
-        onValue(servicesRef, (snapshot) => {
-            const data = snapshot.val();
-            if (data) {
-                const all = Object.entries(data).map(([key, val]) => ({ id: key, ...val }));
-                const current = all.find((s) => s.id === id);
-                setService(current);
-
-                const others = all.filter((s) => s.id !== id);
-                const randomOthers = others.slice(0, 3); // İstersen Math.random() ile karıştırabiliriz
-                setOtherServices(randomOthers);
-            }
-        });
-    }, [id]);
+export default async function ServiceDetailPage({ params }) {
+    const { id } = params;
+    const service = await getServiceById(id);
+    const otherServices = await getOtherServices(id);
 
     if (!service) return <div className="loading">Yükleniyor...</div>;
 
@@ -53,13 +32,14 @@ export default function ServiceDetailPage() {
                         <div key={item.id} className="otherServiceCard">
                             <img src={item.image} alt={item.title} />
                             <h3>{item.title}</h3>
-                            <p>{item.description.length > 250
-                                ? item.description.substring(0, 250) + "..."
-                                : item.description}
+                            <p>
+                                {item.description.length > 250
+                                    ? item.description.substring(0, 250) + "..."
+                                    : item.description}
                             </p>
-                            <button onClick={() => router.push(`/ourServices/${item.id}`)}>
-                                Devamını Gör
-                            </button>
+                            <Link href={`/ourServices/${item.id}`}>
+                                <button>Devamını Gör</button>
+                            </Link>
                         </div>
                     ))}
                 </div>
