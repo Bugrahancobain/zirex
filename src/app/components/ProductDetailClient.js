@@ -63,26 +63,27 @@ export default function ProductDetailClient({ product, otherProducts }) {
                     </div>
                 )}
             </div>
-
-            <div className="otherProductsSection">
-                <h2>Diğer Ürünler</h2>
-                <div className="otherProductGrid">
-                    {otherProducts.map((item) => (
-                        <div key={item.id} className="otherProductCard">
-                            <img src={item.image} alt={item.title} />
-                            <h3>{item.title}</h3>
-                            <p>
-                                {item.description?.length > 250
-                                    ? item.description.substring(0, 250) + "..."
-                                    : item.description}
-                            </p>
-                            <button onClick={() => router.push(`/ourProducts/${item.id}`)}>
-                                Devamını Gör
-                            </button>
-                        </div>
-                    ))}
+            {otherProducts?.length > 0 && (
+                <div className="otherProductsSection">
+                    <h2>Diğer Ürünler</h2>
+                    <div className="otherProductGrid">
+                        {otherProducts.map((item) => (
+                            <div key={item.id} className="otherProductCard">
+                                <img src={item.image} alt={item.title} />
+                                <h3>{item.title}</h3>
+                                <p>
+                                    {item.description?.length > 250
+                                        ? item.description.substring(0, 250) + "..."
+                                        : item.description}
+                                </p>
+                                <button onClick={() => router.push(`/ourProducts/${item.id}`)}>
+                                    Devamını Gör
+                                </button>
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            )}
         </div>
     );
 }
