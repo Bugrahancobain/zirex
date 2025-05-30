@@ -16,19 +16,7 @@ function Footer() {
             <div className='footerDiv'>
                 <div className='footerSocialDiv'>
                     <img src="Zirex_Logo.gif" alt="Zirex_logo.gif" />
-                    <p>Bizleri Sosyal Medyadan Takip Edebilirsiniz.</p>
-                    <div className='footerSocialLinks'>
-                        <Link target='_blank' href="#"><TiSocialFacebook />
-                        </Link>
-                        <Link target='_blank' href="#"><FaXTwitter />
-                        </Link>
-                        <Link target='_blank' href="#"><FaYoutube />
-                        </Link>
-                        <Link target='_blank' href="#"><FaInstagram />
-                        </Link>
-                        <Link target='_blank' href="#"><FaLinkedin />
-                        </Link>
-                    </div>
+
                 </div>
                 <div className='footerFastMenüDiv'>
                     <h2>Hızlı Menü</h2>

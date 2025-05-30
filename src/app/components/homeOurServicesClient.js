@@ -51,7 +51,7 @@ export default function HomeOurServicesClient({ services }) {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <Link className='homeAboutUsBtn' href="/ourServices">Tümünü Gör</Link>
+            <Link className='homeAboutUsBtn' href="/ourServices">Tümünü Keşfet</Link>
         </div>
     );
 }

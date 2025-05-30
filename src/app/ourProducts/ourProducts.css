@@ -89,6 +89,7 @@
 .pageButton {
     border: none;
     background-color: #e0e0e0;
+    text-decoration: none;
     padding: 8px 12px;
     border-radius: 6px;
     cursor: pointer;

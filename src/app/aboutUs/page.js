@@ -17,22 +17,24 @@ function page() {
                     1997 yılında kağıt sektörünün kalbinin attığı <strong>Topkapı</strong>’ya taşınmamız, firmamız adına önemli bir dönüm noktası olmuştur. Bu stratejik adım, müşteri portföyümüzü genişletmemize ve üretim kapasitemizi artırmamıza zemin hazırlamıştır. 2006 yılında kurumsallaşma sürecimizi tamamlayarak <strong>Zirex Kağıt Karton Mukavva Tic. ve San. Ltd. Şti.</strong> unvanını almış bulunmaktayız.
                 </p>
                 <p>
-                    2008 yılı itibariyle, Topkapı’da toplam <strong>3.500 m²</strong> kapalı alana sahip modern üretim tesisimizi faaliyete geçirerek “Her türlü ebat ve bobin kesimi ile Pelur ebatlama” hizmetlerini sunmaya başladık. Bununla birlikte, <strong>Gri Karton</strong> ve <strong>Yapıştırma Mukavva</strong> ürünlerinde kendi markamızı üretme sürecine geçerek sektördeki konumumuzu daha da sağlamlaştırdık.
+                    2008 yılı itibariyle, Topkapı’da toplam <strong>3.500 m²</strong> kapalı alana sahip modern üretim tesisimizi faaliyete geçirerek “Her türlü ebat ve bobin kesimi ile Pelur ebatlama” hizmetlerini sunmaya başladık. Bununla birlikte, <strong>Gri Karton</strong> ve <strong>Lamine Mukavva</strong> ürünlerinde kendi markamızı üretme sürecine geçerek sektördeki konumumuzu daha da sağlamlaştırdık.
                 </p>
 
                 <h3>Ürün Yelpazemiz</h3>
                 <p>Bugün Zirex Kağıt olarak aşağıdaki ürünlerin tedariğini ve satışını gerçekleştirmekteyiz:</p>
                 <ul>
                     <li>Gri Karton</li>
-                    <li>Yapıştırma Mukavva</li>
-                    <li>Pres Mukavva</li>
-                    <li>Exprint, Norm ve Lüks Tripleks Karton</li>
-                    <li>Bristol Karton</li>
-                    <li>Renkli Kaplık ve Dosyalık Kağıtlar</li>
-                    <li>Latex Tabiî Yapıştırıcı</li>
+                    <li>Lamine Mukavva</li>
+                    <li>Beyaz ve Siyah Mukavva Çeşitleri</li>
+                    <li>İthal Lüks Mukavva</li>
+                    <li>Krome Karton</li>
                     <li>Kraft Ambalaj Kağıdı</li>
-                    <li>3. Hamur ve Pelur Kağıt çeşitleri</li>
-                    <li>Çeşitli ithal karton ürünleri</li>
+                    <li>Beyaz Hutbak</li>
+                    <li>Beyaz Pelur</li>
+                    <li>Beyaz Sülfit</li>
+                    <li>Yağlı Kağıt</li>
+                    <li>Hışır Kağıt</li>
+                    <li>Glasine Kağıt</li>
                 </ul>
                 <p>
                     Her biri titizlikle seçilmiş bu ürünlerimiz ile hem üretici hem de toptancı müşterilerimize en uygun fiyat avantajlarıyla hizmet sunuyor, <strong>Türkiye’nin dört bir yanına</strong> kaliteli ürün ve güvenilir tedarik zinciri ile ulaşıyoruz.
@@ -40,7 +42,7 @@ function page() {
 
                 <h3>Neden Zirex Kağıt?</h3>
                 <ul>
-                    <li>43 yıllık tecrübe ve sektörel birikim</li>
+                    <li>45 yıllık tecrübe ve sektörel birikim</li>
                     <li>Kendi markamız altında üretim</li>
                     <li>Hızlı teslimat, esnek üretim kabiliyeti</li>
                     <li>Yüksek müşteri memnuniyeti odaklı hizmet anlayışı</li>

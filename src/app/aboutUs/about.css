@@ -25,3 +25,10 @@
     width: 70%;
     padding: 50px;
 }
+
+@media (max-width: 1024px) {
+    .aboutSection{
+        width: 90%;
+        padding: 20px;
+    }
+}

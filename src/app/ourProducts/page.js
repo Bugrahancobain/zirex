@@ -1,9 +1,8 @@
-// app/ourProducts/page.js
 import { adminDb } from "../../../firebaseAdmin";
 import Link from "next/link";
 import "./ourProducts.css";
 
-export const dynamic = "force-dynamic"; // Firebase Realtime DB için şart
+export const dynamic = "force-dynamic";
 
 async function getProducts() {
     const snapshot = await adminDb.ref("products").once("value");
@@ -12,10 +11,10 @@ async function getProducts() {
     return array.reverse();
 }
 
-export default async function OurProductsPage() {
+export default async function OurProductsPage({ searchParams }) {
     const products = await getProducts();
     const ITEMS_PER_PAGE = 9;
-    const currentPage = 1;
+    const currentPage = parseInt(searchParams.page || "1", 10);
     const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
     const endIndex = startIndex + ITEMS_PER_PAGE;
     const currentProducts = products.slice(startIndex, endIndex);
@@ -42,9 +41,13 @@ export default async function OurProductsPage() {
             </div>
             <div className="pagination">
                 {Array.from({ length: totalPages }, (_, i) => (
-                    <button key={i + 1} className={`pageButton ${currentPage === i + 1 ? "active" : ""}`}>
+                    <Link
+                        key={i + 1}
+                        href={`?page=${i + 1}`}
+                        className={`pageButton ${currentPage === i + 1 ? "active" : ""}`}
+                    >
                         {i + 1}
-                    </button>
+                    </Link>
                 ))}
             </div>
         </div>

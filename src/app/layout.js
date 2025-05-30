@@ -17,7 +17,7 @@ const poppins = Poppins({
 export const metadata = {
   title: "Zirex Kağıt | Gri Karton, Mukavva, Pelur Kağıdı ve Ambalaj Çözümleri",
   description:
-    "Zirex Kağıt, 1980 yılında kurulan Zirek Ticaret’in devamı olarak geniş ürün yelpazesiyle gri karton, yapıştırma mukavva, pelur kağıdı ve ambalaj çözümleri sunmaktadır. Topkapı’daki 3500 m² tesisiyle ebatlama ve bobin kesimi hizmetleriyle sektörde öncüdür.",
+    "Zirex Kağıt, 1980 yılında kurulan Zirek Ticaret’in devamı olarak geniş ürün yelpazesiyle gri karton, Lamine mukavva, pelur kağıdı ve ambalaj çözümleri sunmaktadır. Topkapı’daki 3500 m² tesisiyle ebatlama ve bobin kesimi hizmetleriyle sektörde öncüdür.",
   keywords: [
     "Zirex Kağıt",
     "Zirek Ticaret",
@@ -26,7 +26,6 @@ export const metadata = {
     "Pelur Kağıdı",
     "Karton Çeşitleri",
     "Ambalaj Kağıdı",
-    "Latex Yapıştırıcı",
     "Topkapı Kağıt Toptancısı",
     "Ebatlama",
     "Bobin Kesim",
@@ -38,7 +37,7 @@ export const metadata = {
   openGraph: {
     title: "Zirex Kağıt | Gri Karton, Mukavva, Pelur Kağıdı ve Ambalaj Çözümleri",
     description:
-      "ZİREX KAĞIT, 1980’den bu yana kağıt ve karton sektöründe hizmet veren, 3500 m² üretim tesisine sahip lider tedarikçinizdir. Gri karton, yapıştırma mukavva ve pelur kağıdı üretimiyle sektörde fark yaratıyor.",
+      "ZİREX KAĞIT, 1980’den bu yana kağıt ve karton sektöründe hizmet veren, 3500 m² üretim tesisine sahip lider tedarikçinizdir. Gri karton, Lamine mukavva ve pelur kağıdı üretimiyle sektörde fark yaratıyor.",
     url: "https://zirexkagit.com.tr",
     siteName: "Zirex Kağıt",
     type: "website",
