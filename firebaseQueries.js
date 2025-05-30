@@ -1,4 +1,3 @@
-import { get, ref } from "firebase-admin/database";
 import { adminDb } from "./firebaseAdmin";
 
 export async function getProductById(id) {

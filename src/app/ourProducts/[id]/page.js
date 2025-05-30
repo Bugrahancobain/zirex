@@ -10,8 +10,10 @@ export default async function ProductDetailPage({ params }) {
     if (!product) {
         return notFound();
     }
-
     const otherProducts = await getOtherProducts(params.id, 3);
+
+    console.log("PRODUCT", JSON.stringify(product));
+    console.log("OTHER PRODUCTS", JSON.stringify(otherProducts));
 
     return (
         <ProductDetailClient
