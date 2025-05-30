@@ -4,16 +4,13 @@ import { getProductById, getOtherProducts } from "../../../../firebaseQueries";
 import { notFound } from "next/navigation";
 
 export default async function ProductDetailPage({ params }) {
-    const product = await getProductById(params.id);
+    const id = typeof params?.id === "string" ? params.id : null;
+    if (!id) return notFound();
 
-    // Ürün bulunamadıysa 404 göster
-    if (!product) {
-        return notFound();
-    }
-    const otherProducts = await getOtherProducts(params.id, 3);
+    const product = await getProductById(id);
+    if (!product) return notFound();
 
-    console.log("PRODUCT", JSON.stringify(product));
-    console.log("OTHER PRODUCTS", JSON.stringify(otherProducts));
+    const otherProducts = await getOtherProducts(id, 3);
 
     return (
         <ProductDetailClient
