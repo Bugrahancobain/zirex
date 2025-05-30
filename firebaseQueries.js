@@ -1,6 +1,12 @@
 import { adminDb } from "./firebaseAdmin";
 
 export async function getProductById(id) {
+    const invalidChars = /[.#$[\]]/;
+    if (!id || invalidChars.test(id)) {
+        console.warn("Geçersiz ID algılandı:", id);
+        return null;
+    }
+
     const snapshot = await adminDb.ref(`products/${id}`).get();
     const data = snapshot.val();
     return data ? { id, ...data } : null;
