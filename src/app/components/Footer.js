@@ -2,12 +2,6 @@ import React from 'react'
 import "../style/footer.css"
 import { FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { TiSocialFacebook } from "react-icons/ti";
-import { FaXTwitter, FaYoutube } from "react-icons/fa6";
-
-
-
-
 import Link from 'next/link'
 
 function Footer() {
@@ -16,7 +10,6 @@ function Footer() {
             <div className='footerDiv'>
                 <div className='footerSocialDiv'>
                     <img src="/Zirex_Logo.gif" alt="Zirex_logo" />
-
                 </div>
                 <div className='footerFastMenüDiv'>
                     <h2>Hızlı Menü</h2>

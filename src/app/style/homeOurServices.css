@@ -36,6 +36,7 @@
     align-items: center;
     transition: all 0.3s ease;
     height: 100%;
+    min-height: max-content;
     width: 100%;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     min-height: 350px; /* Kart boyutunu sabitle */
@@ -91,8 +92,8 @@
   }
 
   .seeMoreButton {
-    margin-top: 12px;
-    background-color: #3f2eff;
+    margin: 15px 0px;
+    background-color: #ff2e2e;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -103,7 +104,7 @@
   }
   
   .seeMoreButton:hover {
-    background-color: #2b1eb8;
+    background-color: #b81e1e;
   }
   
   /* Responsive kÃ¼Ã§Ã¼k ekranlar */

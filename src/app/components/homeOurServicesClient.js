@@ -37,8 +37,8 @@ export default function HomeOurServicesClient({ services }) {
                             <img src={service.image} alt={service.title} className="serviceImage" />
                             <div className="serviceText">
                                 <h3>{service.title}</h3>
-                                <p>{truncateText(service.description, 250)}</p>
-                                {service.description?.length > 250 && (
+                                <p>{truncateText(service.description, 150)}</p>
+                                {service.description?.length > 150 && (
                                     <button
                                         className="seeMoreButton"
                                         onClick={() => router.push(`/ourServices/${service.id}`)}

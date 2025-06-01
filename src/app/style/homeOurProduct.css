@@ -70,7 +70,7 @@
 
 .seeMoreButton {
     margin-top: 12px;
-    background-color: #0070f3;
+    background-color: #f30000;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -81,12 +81,13 @@
 }
 
 .seeMoreButton:hover {
-    background-color: #005bb5;
+    background-color: #b50000;
 }
 
 .homeAboutUsBtn {
+    margin-top: 40px;
     display: inline-block;
-    background-color: #000;
+    background-color: #b80000;
     color: white;
     padding: 10px 20px;
     border-radius: 6px;
@@ -96,5 +97,5 @@
 }
 
 .homeAboutUsBtn:hover {
-    background-color: #333;
+    background-color: #ff0000;
 }
