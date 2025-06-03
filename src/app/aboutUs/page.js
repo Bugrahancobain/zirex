@@ -5,7 +5,7 @@ function page() {
     return (
         <div className='aboutMain'>
             <div className='aboutBannerDiv'>
-                <img className='aboutBannerImg' src="/aboutUsBanner.png" alt="Zirex_Kağıt_Hakkımızda_Banner.png" />
+                <img className='aboutBannerImg' src="/aboutUsBanner.webp" alt="Zirex_Kağıt_Hakkımızda_Banner.png" />
             </div>
             <div className="aboutSection">
                 <h1>Hakkımızda</h1>

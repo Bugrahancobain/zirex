@@ -81,7 +81,7 @@
 
 .otherServiceCard button {
     margin-top: auto;
-    background-color: #0070f3;
+    background-color: #f30000;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -91,7 +91,7 @@
 }
 
 .otherServiceCard button:hover {
-    background-color: #005bb5;
+    background-color: #b50000;
 }
 
 /* Tablet */

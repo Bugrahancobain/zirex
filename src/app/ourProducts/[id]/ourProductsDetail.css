@@ -113,7 +113,7 @@
 }
 
 .otherProductCard button {
-    background-color: #0070f3;
+    background-color: #f30000;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -123,7 +123,7 @@
 }
 
 .otherProductCard button:hover {
-    background-color: #005bb5;
+    background-color: #b50000;
 }
 
 @media (max-width: 1024px) {

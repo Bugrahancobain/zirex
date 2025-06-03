@@ -5,7 +5,7 @@ function homeAboutUs() {
     return (
         <div className='homeAboutUsMain'>
             <div className='homeAboutUsImg'>
-                <img src="/aboutUsBanner.png" alt="Zirex_Kağıt_Hakkımızda.png" />
+                <img src="/aboutUsBanner.webp" alt="Zirex_Kağıt_Hakkımızda.png" />
             </div>
             <div className='homeAboutUsDiv'>
                 <h3>Hakkımızda</h3>
