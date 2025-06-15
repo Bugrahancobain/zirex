@@ -37,7 +37,7 @@ export default function ProductDetailClient({ product, otherProducts }) {
 
                 {product.sizes?.length > 0 && (
                     <div className="productListSection">
-                        <h3>Ölçü & Kalınlık</h3>
+                        <h3>Ölçü & Kalınlık & Gramaj</h3>
                         <div className="productItemGrid">
                             {product.sizes.map((item, idx) => (
                                 <div key={idx} className="productItem">
