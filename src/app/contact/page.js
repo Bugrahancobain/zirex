@@ -41,13 +41,13 @@ function page() {
                 <div className='contactInfoLocation'>
                     <FaLocationDot />
                     <span>ADRES</span>
-                    <span>Türkiye, Marmara bölgesi, İstanbul, Davutpaşa Caddesi No : 103 / 319</span>
+                    <span>Türkiye, Marmara bölgesi, İstanbul, Davutpaşa Caddesi No : 101 / 319 Topkapı.</span>
                 </div>
                 <div className="contactInfoPhone">
                     <FaPhoneAlt />
                     <span>TELEFON</span>
-                    <span>+90 (212) 674-44-44</span>
-                    <span>+90 (212) 613-96-76</span>
+                    <span>+90 (212) 674-44-44 (PBX)</span>
+                    <span>+90 (552) 861-29-66</span>
                 </div>
                 <div className="contactInfoMail">
                     <IoIosMail />

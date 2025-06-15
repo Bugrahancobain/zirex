@@ -9,7 +9,7 @@ function Footer() {
         <div className='footerMain' style={{ backgroundImage: `url("/footerImage.jpg")`, backgroundSize: "cover" }}>
             <div className='footerDiv'>
                 <div className='footerSocialDiv'>
-                    <img src="/Zirex_Logo.gif" alt="Zirex_logo" />
+                    <img src="/Zirex_Logo.png" alt="Zirex_logo" />
                 </div>
                 <div className='footerFastMenüDiv'>
                     <h2>Hızlı Menü</h2>
