@@ -16,21 +16,6 @@ export const metadata = {
   title: "Zirex Kağıt | Gri Karton, Mukavva, Pelur Kağıdı ve Ambalaj Çözümleri",
   description:
     "Zirex Kağıt, 1980 yılında kurulan Zirek Ticaret’in devamı olarak geniş ürün yelpazesiyle gri karton, Lamine mukavva, pelur kağıdı ve ambalaj çözümleri sunmaktadır. Topkapı’daki 3500 m² tesisiyle ebatlama ve bobin kesimi hizmetleriyle sektörde öncüdür.",
-  keywords: [
-    "Zirex Kağıt",
-    "Zirek Ticaret",
-    "Gri Karton",
-    "Mukavva",
-    "Pelur Kağıdı",
-    "Karton Çeşitleri",
-    "Ambalaj Kağıdı",
-    "Topkapı Kağıt Toptancısı",
-    "Ebatlama",
-    "Bobin Kesim",
-    "İthal Karton",
-    "Bristol Karton",
-    "Tripleks Karton"
-  ],
   metadataBase: new URL("https://zirexkagit.com.tr"),
   openGraph: {
     title: "Zirex Kağıt | Gri Karton, Mukavva, Pelur Kağıdı ve Ambalaj Çözümleri",
@@ -46,10 +31,8 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="tr">
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-
-        {/* Google Analytics Script */}
+      <body className={poppins.variable}>
+        {/* ✅ GA Script burada olabilir */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-7W6QYWKPGC"
           strategy="afterInteractive"
@@ -62,8 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-7W6QYWKPGC');
           `}
         </Script>
-      </head>
-      <body className={poppins.variable}>
+
         <Navbar />
         {children}
         <Footer />
