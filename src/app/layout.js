@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Head from "next/head";
-
+import Script from "next/script";
 
 const poppins = Poppins({
   variable: "--font-geist-sans",
@@ -51,6 +51,19 @@ export default function RootLayout({ children }) {
     <html lang="tr">
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        {/* Google Analytics Script */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-7W6QYWKPGC"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-7W6QYWKPGC');
+          `}
+        </Script>
       </Head>
       <body className={`${poppins.variable}`}>
         <Navbar />
