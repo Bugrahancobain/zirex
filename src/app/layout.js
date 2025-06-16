@@ -3,11 +3,9 @@ import "./globals.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollToTopButton from "./components/ScrollToTopButton";
-import Head from "next/head";
 import Script from "next/script";
 
 const poppins = Poppins({
-  variable: "--font-geist-sans",
   subsets: ["latin"],
   variable: "--font-poppins",
   weight: ["400", "600"],
@@ -42,15 +40,15 @@ export const metadata = {
     siteName: "Zirex Kağıt",
     type: "website",
     locale: "tr_TR"
-
   }
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="tr">
-      <Head>
+      <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+
         {/* Google Analytics Script */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-7W6QYWKPGC"
@@ -64,8 +62,8 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-7W6QYWKPGC');
           `}
         </Script>
-      </Head>
-      <body className={`${poppins.variable}`}>
+      </head>
+      <body className={poppins.variable}>
         <Navbar />
         {children}
         <Footer />
