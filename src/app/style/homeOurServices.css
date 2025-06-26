@@ -48,9 +48,9 @@
   }
   
   .serviceImage {
-    width: 100% !important;
-    height: 50% !important;
-    object-fit: contain;
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover;
     margin-bottom: 20px;
   }
   

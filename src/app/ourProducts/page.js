@@ -26,7 +26,7 @@ export default async function OurProductsPage({ searchParams }) {
     return (
         <div className="ourProductsPageMain">
             <div className="ourProductsPageImgDiv">
-                <img className="ourProductsPageImg" src="/ourProductsBanner.png" alt="Zirex_Kağıt_Ürünlerimiz_Banner.png" />
+                <img className="ourProductsPageImg" src="/ourProductsBanner.jpeg" alt="Zirex_Kağıt_Ürünlerimiz_Banner.png" />
             </div>
             <h2>Ürünlerimiz</h2>
             <div className="productGrid">

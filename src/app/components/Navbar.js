@@ -23,7 +23,8 @@ function Navbar() {
   return (
     <div className="navbarMain">
       <Link href="/" className="navbarImgDiv">
-        <img className="navbarImg" src="/Zirex_Logo.png" alt="Zirex_Kağıt_Logo" />
+        <img className="navbarImg" src="/Zirex_Logo.gif" alt="Zirex_Kağıt_Logo" />
+        <img className="navbarImgpng" src="/Zirex_Logo.png" alt="Zirex_Kağıt_Logo" />
       </Link>
 
       <div className="burgerIcon" onClick={toggleMenu}>

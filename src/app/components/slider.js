@@ -20,10 +20,10 @@ export default function App() {
                 loop
                 className="mySwiper"
             >
-                <SwiperSlide><img src="/homeSlider1.png" alt="Zirex_Kağıt_Home_Slider.png" /></SwiperSlide>
-                <SwiperSlide><img src="/homeSlider2.png" alt="Zirex_Kağıt_Home_Slider.png" /></SwiperSlide>
-                <SwiperSlide><img src="/homeSlider3.png" alt="Zirex_Kağıt_Home_Slider.png" /></SwiperSlide>
-                <SwiperSlide><img src="/homeSlider4.png" alt="Zirex_Kağıt_Home_Slider.png" /></SwiperSlide>
+                <SwiperSlide><img src="/homeSlider1.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
+                <SwiperSlide><img src="/homeSlider2.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
+                <SwiperSlide><img src="/homeSlider3.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
+                <SwiperSlide><img src="/homeSlider4.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
             </Swiper>
         </>
     );

@@ -9,13 +9,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 40px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 1);
   transition: all 0.3s ease;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .navbarMain:hover {
-  background-color: rgba(255, 255, 255, 1);
   box-shadow: rgba(0, 0, 0, 0.50) 0px 5px 35px;
 }
 
@@ -27,6 +26,15 @@
   display: flex;
   gap: 20px;
   align-items: center;
+}
+
+.navbarImgDiv{
+  display: flex;
+  gap: 20px;
+}
+
+.navbarImgpng{
+  height: 90px;
 }
 
 .navbarLink {
