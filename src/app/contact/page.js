@@ -41,7 +41,8 @@ function page() {
                 <div className='contactInfoLocation'>
                     <FaLocationDot />
                     <span>ADRES</span>
-                    <span>Türkiye, Marmara bölgesi, İstanbul, Davutpaşa Caddesi No : 101 / 319 Topkapı.</span>
+                    <span>Türkiye,  Marmara bölgesi,  İstanbul,  Davutpaşa caddesi no 101/319 Cevizlibağ Topkapı
+                    </span>
                 </div>
                 <div className="contactInfoPhone">
                     <FaPhoneAlt />
