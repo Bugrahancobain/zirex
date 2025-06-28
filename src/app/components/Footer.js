@@ -1,6 +1,6 @@
 import React from 'react'
 import "../style/footer.css"
-import { FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaPhoneAlt, FaMapMarkerAlt, FaWhatsapp } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import Link from 'next/link'
 
@@ -28,7 +28,7 @@ function Footer() {
                         <FaPhoneAlt />+90 (212) 674-44-44
                     </div>
                     <div>
-                        <FaPhoneAlt />+90 (552) 861 29 66
+                        <FaWhatsapp />+90 (552) 861 29 66
                     </div>
                     <div>
                         <IoMail />haydar@zirex.com.tr
