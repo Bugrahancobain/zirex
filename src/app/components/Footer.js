@@ -28,7 +28,7 @@ function Footer() {
                         <FaPhoneAlt />+90 (212) 674-44-44
                     </div>
                     <div>
-                        <FaWhatsapp />+90 (552) 861 29 66
+                        <FaWhatsapp style={{ fill: "green" }} />+90 (552) 861 29 66
                     </div>
                     <div>
                         <IoMail />haydar@zirex.com.tr
