@@ -6,7 +6,6 @@
     padding: 50px;
     width: 100%;
     min-height: max-content;
-    color: white;
     font-size: 17px;
 }
 
@@ -40,21 +39,20 @@
 }
 
 .footerSocialLinks a{
-    color: white;
     text-decoration: none;
     width: fit-content;
 
 }
 
 .footerSocialLinks a:active{
-    color: white;
+    color: black;
 }
 
 .footerFastMenüDiv{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: white;
+    color: black;
     width: 33%;
 }
 
@@ -64,13 +62,13 @@
 
 .footerFastMenüDiv a{
     text-decoration: none;
-    color: white;
+    color: black;
     width: fit-content;
 
 }
 
 .footerFastMenüDiv a:active{
-    color: white;
+    color: black;
 }
 
 .footerContact{

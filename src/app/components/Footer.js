@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 function Footer() {
     return (
-        <div className='footerMain' style={{ backgroundImage: `url("/footerImage.jpg")`, backgroundSize: "cover" }}>
+        <div className='footerMain'>
             <div className='footerDiv'>
                 <div className='footerSocialDiv'>
                     <img src="/Zirex_Logo.png" alt="Zirex_logo" />
