@@ -60,6 +60,7 @@ function page() {
                 <p>
                     Zirex Kağıt olarak, geçmişten gelen güçlü temellerimizle geleceğe emin adımlarla ilerliyor; sektördeki gelişmeleri yakından takip ederek müşterilerimize her zaman daha iyisini sunmayı hedefliyoruz.
                 </p>
+                <p>ÜCRETSİZ OTOPARKIMIZ ÇATI KATINDA MEVCUTTUR.</p>
                 <p><em>Sadece bir imalat ve tedarikçi ithalatcı değil; aynı zamanda güvenilir bir iş ortağıyız.</em></p>
             </div>
         </div>

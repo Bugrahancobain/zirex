@@ -2,7 +2,8 @@
 import React, { useRef } from 'react'
 import "./contact.css"
 import { FaLocationDot } from "react-icons/fa6";
-import { FaPhoneAlt, FaEnvelope, FaUser, FaPhone, FaInfoCircle, FaPencilAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaUser, FaPhone, FaInfoCircle, FaPencilAlt, FaWhatsapp } from "react-icons/fa";
+
 import { IoIosMail } from "react-icons/io";
 
 
@@ -41,14 +42,17 @@ function page() {
                 <div className='contactInfoLocation'>
                     <FaLocationDot />
                     <span>ADRES</span>
-                    <span>Türkiye,  Marmara bölgesi,  İstanbul,  Davutpaşa caddesi no 101/319 Cevizlibağ Topkapı
+                    <span>Türkiye, İstanbul,  Davutpaşa caddesi no 101/319 Cevizlibağ Topkapı
                     </span>
+                    <span>ÜCRETSİZ OTOPARKIMIZ ÇARTI KATINDA MEVCUTTUR.</span>
                 </div>
                 <div className="contactInfoPhone">
                     <FaPhoneAlt />
                     <span>TELEFON</span>
                     <span>+90 (212) 674-44-44 (PBX)</span>
-                    <span>+90 (552) 861-29-66</span>
+                    <div>
+                        <FaWhatsapp /> <span> +90 (552) 861-29-66</span>
+                    </div>
                 </div>
                 <div className="contactInfoMail">
                     <IoIosMail />

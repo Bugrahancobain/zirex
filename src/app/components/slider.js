@@ -22,7 +22,21 @@ export default function App() {
             >
                 <SwiperSlide><img src="/homeSlider1.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
                 <SwiperSlide><img src="/homeSlider2.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
-                <SwiperSlide><img src="/homeSlider3.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
+                <SwiperSlide>
+                    <video
+                        src="/slider4.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "contain",
+                            backgroundColor: "#000" // boş alan varsa buraya renk verilebilir
+                        }}
+                    />
+                </SwiperSlide>
                 <SwiperSlide><img src="/homeSlider4.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
             </Swiper>
         </>

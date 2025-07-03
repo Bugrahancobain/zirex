@@ -22,7 +22,7 @@ function Footer() {
                 <div className='footerContact'>
                     <h2>Bize Ulaşın</h2>
                     <div><FaMapMarkerAlt />
-                        Türkiye,  Marmara bölgesi,  İstanbul,  Davutpaşa caddesi no 101/319 Cevizlibağ Topkapı
+                        Türkiye, İstanbul,  Davutpaşa caddesi no 101/319 Cevizlibağ Topkapı
                     </div>
                     <div>
                         <FaPhoneAlt />+90 (212) 674-44-44

@@ -40,6 +40,17 @@
     width: 33%;
 }
 
+.contactInfoPhone div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contactInfoPhone div svg{
+    font-size: 24px;
+    fill: green;
+}
+
 .contactMap{
     padding: 50px 0;
     width: 100%;
