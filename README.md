@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zirex Web Application
 
-## Getting Started
+Zirex is a modern, responsive web application built with **Next.js 15**, designed to present and manage company products and services. It includes public pages (such as About Us, Contact, Products, and Services) and an admin panel for internal management.
 
-First, run the development server:
+## 🌐 Live Preview
+> (Insert deployment link here if available, e.g. https://zirex.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Tech Stack
+
+- **Next.js 15 (App Router)**
+- **React 19**
+- **Firebase & Firebase Admin SDK**
+- **Swiper.js** (Slider/Carousel)
+- **React Icons**
+- **Vanilla CSS**
+
+---
+
+## 📁 Project Structure
+
+```
+public/           → Static files (images, video, favicon, logo)
+src/
+├── app/          → Main app directory (App Router)
+│   ├── aboutus/  → About Us page
+│   ├── admin/    → Admin panel (products & services management)
+│   ├── contact/  → Contact page
+│   ├── forgot-password/
+│   ├── login/    → User login page
+│   ├── ourProducts/ → Product listing & detail pages
+│   ├── ourServices/ → Services listing & detail pages
+│   ├── style/    → CSS files
+│   └── layout.js → App layout
+components/       → Reusable React components (Navbar, Footer, Sidebar, etc.)
+firebaseQueries/  → Firebase Admin data fetching helpers
+firebase.js       → Firebase client initialization
+firebaseAdmin.js  → Firebase Admin SDK setup
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📦 Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Clone the repository:**
+```bash
+git clone https://github.com/bugrahancobain/zirex.git
+cd zirex
+```
 
-## Learn More
+2. **Install dependencies:**
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Set up environment variables:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a `.env.local` file in the root and add:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```env
+FIREBASE_API_KEY=your_firebase_api_key
+FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+FIREBASE_DATABASE_URL=https://your_project.firebaseio.com
+FIREBASE_PROJECT_ID=your_project
+FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+FIREBASE_APP_ID=your_app_id
 
-## Deploy on Vercel
+FIREBASE_SERVICE_ACCOUNT_KEY={"type": "...", ...}  # As a single-line JSON string
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Scripts
+
+- `npm run dev` – Start development server (with Turbopack)
+- `npm run build` – Create optimized production build
+- `npm start` – Start production server
+- `npm run lint` – Run ESLint checks
+
+---
+
+## 📌 Features
+
+- Responsive UI with custom components
+- Firebase Realtime Database integration
+- Firebase Admin SSR for data fetching
+- Slider support using Swiper
+- Admin dashboard for product/service CRUD
+- Smooth scroll to top button
+- Modular CSS files
+
+---
+
+## 🔐 Admin Access
+
+To restrict write access:
+- Only users with emails `haydar@zirex.com.tr` and `bugrahancoban1@gmail.com` can write to Firebase.
+- Rules are set inside Firebase Realtime Database security rules.
+
+---
+
+## ✍️ Author
+
+- Developed by **Zirex Team**
+- For custom integrations or support, contact: [info@zirex.com.tr](mailto:info@zirex.com.tr)
+
+---
+
+## 📝 License
+
+This project is private and not open-sourced.
