@@ -11,10 +11,10 @@ function Navbar() {
 
   const navLinks = [
     { href: "/", label: "Anasayfa" },
-    { href: "/aboutUs", label: "Hakkımızda" },
+    { href: "/contact", label: "İletişim" },
     { href: "/ourProducts", label: "Ürünlerimiz" },
     { href: "/ourServices", label: "Hizmetlerimiz" },
-    { href: "/contact", label: "İletişim" },
+    { href: "/aboutUs", label: "Hakkımızda" },
   ];
 
   const toggleMenu = () => setIsOpen(!isOpen);
