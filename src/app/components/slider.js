@@ -21,8 +21,8 @@ export default function App() {
                 className="mySwiper"
             >
                 <SwiperSlide><img src="/homeSlider1.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
-                <SwiperSlide><img src="/homeSlider2.jpg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
-                <SwiperSlide><img src="/homeSlider3.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
+                <SwiperSlide><img src="/homeSlider2.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
+                <SwiperSlide><img src="/homeSlider3.jpg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
                 <SwiperSlide><img src="/homeSlider4.jpeg" alt="Zirex_Kağıt_Home_Slider.jpeg" /></SwiperSlide>
             </Swiper>
         </>
